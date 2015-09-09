@@ -11,8 +11,22 @@ $(document).ready(function() {
 
 // Attach the project links to their buttons.
 function setProjectLinks() {
+    var links = [
+        "http://p2.matthewbullen.me/",
+        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p2",
+        "http://p3.matthewbullen.me/",
+        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p3",
+        "http://p4.matthewbullen.me/",
+        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p4",
+    ];
     var i, button;
     for (i = 0; i < 6; i++) {
-        document.querySelector("#button-" + i).disabled = "disabled";
+        button = document.querySelector("#button-" + i);
+        button.setAttribute("data-href", links[i]);
+        button.addEventListener("click", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.location = this.getAttribute("data-href");
+        });
     }
 }
