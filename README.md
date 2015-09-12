@@ -1,6 +1,6 @@
 ## CSCI E-15 Dynamic Web Applications Portfolio
 
-Portfolio for the Fall 2015 Dynamic Web Applications class. Projects will be added as I finish them!
+In progress - a portfolio for the Fall 2015 Dynamic Web Applications class. Right now, I've completed the first project. The remaining links just lead to placeholder pages, and will be updated as I finish each project.
 
 ##### View P1: http://p1.matthewbullen.me
 ##### View P2: http://p2.matthewbullen.me
