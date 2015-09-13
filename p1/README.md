@@ -12,3 +12,4 @@ An introductory page and the top page of the portfolio of class projects.
 
 * Zurb Foundation 5: http://foundation.zurb.com/
 * jQuery 2.1.4: https://jquery.com/download/
+* Museo and Sina fonts: http://www.fontspring.com/
