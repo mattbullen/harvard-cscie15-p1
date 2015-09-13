@@ -1,5 +1,14 @@
 ## CSCI E-15 Project 1
 
-An introductory page and the top page of the portfolio. I used Zurb Foundation 5 for the layout with jQuery 2.1.4.
+#### Live URL
 
-##### View: http://p1.matthewbullen.me
+http://p1.matthewbullen.me
+
+#### Description
+
+An introductory page and the top page of the portfolio of class projects.
+
+#### Outside Code
+
+Zurb Foundation 5: http://foundation.zurb.com/
+jQuery 2.1.4: https://jquery.com/download/
