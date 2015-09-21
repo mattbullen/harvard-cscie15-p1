@@ -51,7 +51,7 @@
                 </div>
                 
                 <div id="range-slider-numbers" class="range-slider disabled" data-slider data-options="initial: 1; start: 1; end: 10; step: 1;">
-                    <span id="range-button-numbers" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                    <span id="range-button-numbers" class="range-slider-handle xkcd-color" role="slider" tabindex="0" aria-valuemin="10" aria-valuemax="10" aria-valuenow="0"> </span>
                     <span class="range-slider-active-segment"> </span>
                     <input id="quantity-numbers" name="quantity-numbers" type="hidden">
                 </div>
@@ -62,7 +62,7 @@
                 </div>
                 
                 <div id="range-slider-special" class="range-slider disabled" data-slider data-options="initial: 1; start: 1; end: 10; step: 1;">
-                    <span id="range-button-special" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                    <span id="range-button-special" class="range-slider-handle xkcd-color" role="slider" tabindex="0" aria-valuemin="10" aria-valuemax="10" aria-valuenow="0"> </span>
                     <span class="range-slider-active-segment"> </span>
                     <input id="quantity-special" name="quantity-special" type="hidden">
                 </div>
@@ -126,7 +126,7 @@
                         <a id="panel3d-heading" class="accordion-href xkcd-color" href="#panel3d" role="tab" aria-controls="panel3d">How do I read the original XKCD post?</a>
                         <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
                             <div class="image-wrapper overlay-fade-in-new-background">
-                                <img id="pic" src="img/comic.png" title="The original XKCD comic strip!" />
+                                <img id="pic" src="img/comic.png" alt="The original XKCD comic strip!" title="The original XKCD comic strip!" />
                                 <div class="image-overlay-content">
                                     <div class="discussion">To read the original post and other XKCD posts, use this link:</div>
                                     <div class="xkcd-center">
@@ -140,7 +140,7 @@
                 
             </div>
             
-            <div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalMessage" aria-hidden="true" role="dialog">
                 <p id="modalLeadTop" class="lead"> </p>
                 <h3 id="modalMessage" class="password">*</h3>
                 <p id="modalLeadBottom" class="lead"> </p>
