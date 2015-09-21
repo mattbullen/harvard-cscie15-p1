@@ -6,7 +6,7 @@ http://p2.matthewbullen.me
 
 #### Description
 
-A single page app for generating XKCD-style [high entropy passwords](https://xkcd.com/936/). Passwords may be customized by number of words (1 to 10) or by adding numbers, special characters, word separator characters, and/or changing the letter case. Words are drawn randomly from either a pre-made [word list](http://www.mieliestronk.com/corncob_lowercase.txt) or from a word list created by scraping an online collection of commonly-used [English words](http://www.paulnoll.com).
+A single page app for generating XKCD-style [high entropy passwords](https://xkcd.com/936/). Passwords may be customized by number of words (1 to 10), or by adding numbers, special characters, word separator characters, and/or changing the letter case. Words are drawn randomly from either a pre-made [word list](http://www.mieliestronk.com/corncob_lowercase.txt) or from a word list created by scraping an online collection of commonly-used [English words](http://www.paulnoll.com).
 
 #### Demo
 
