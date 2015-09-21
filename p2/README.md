@@ -19,3 +19,7 @@ A single page app for generating XKCD-style [high entropy passwords](https://xkc
 * Zurb Foundation 5 with accordion and modal plugins: http://foundation.zurb.com/
 * jQuery 2.1.4: https://jquery.com/download/
 * Museo and Sina fonts: http://www.fontspring.com/
+
+#### Notes
+
+Some of the default CSS used by Foundation doesn't validate or throws warnings on the [W3C Validator](https://jigsaw.w3.org/css-validator/).
