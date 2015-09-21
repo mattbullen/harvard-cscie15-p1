@@ -37,8 +37,8 @@
                 <div id="password-options-title">Password Options</div>
                 
                 <h5 id="number-words-title">How many words?</h5>
-                <div id="range-slider-words" class="range-slider" data-slider data-options="initial: 4; start: 1; end: 10; step: 1;" aria-valuemin="10" aria-valuemax="10" aria-valuenow="4">
-                    <span id="range-button-words" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                <div id="range-slider-words" class="range-slider" data-slider data-options="initial: 4; start: 1; end: 10; step: 1;">
+                    <span id="range-button-words" class="range-slider-handle xkcd-color" role="slider" tabindex="0" aria-valuemin="10" aria-valuemax="10" aria-valuenow="4"> </span>
                     <span class="range-slider-active-segment"> </span>
                     <input id="quantity-words" name="quantity-words" type="hidden">
                 </div>
@@ -142,7 +142,7 @@
             
             <div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
                 <p id="modalLeadTop" class="lead"> </p>
-                <h3 id="modalMessage" class="password"> </h3>
+                <h3 id="modalMessage" class="password">*</h3>
                 <p id="modalLeadBottom" class="lead"> </p>
                 <a class="close-reveal-modal" aria-label="Close">&#215;</a>
             </div>
