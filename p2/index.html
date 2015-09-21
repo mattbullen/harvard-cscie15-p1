@@ -6,7 +6,7 @@
    
         <!-- Meta-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
         <meta name="description" content="CSCI E-15 Project 2 - XKCD Password Generator">
         <meta name="author" content="Matthew Bullen">
@@ -37,7 +37,7 @@
                 <div id="password-options-title">Password Options</div>
                 
                 <h5 id="number-words-title">How many words?</h5>
-                <div id="range-slider-words" class="range-slider" data-slider data-options="initial: 4; start: 1; end: 10; step: 1;">
+                <div id="range-slider-words" class="range-slider" data-slider data-options="initial: 4; start: 1; end: 10; step: 1;" aria-valuemin="10" aria-valuemax="10" aria-valuenow="4">
                     <span id="range-button-words" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
                     <span class="range-slider-active-segment"> </span>
                     <input id="quantity-words" name="quantity-words" type="hidden">
