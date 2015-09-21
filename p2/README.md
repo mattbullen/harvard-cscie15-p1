@@ -10,7 +10,7 @@ TBD
 
 #### Description
 
-A single page app to generate XKCD-style high entropy passwords. Passwords may be customized by number of words (1 to 10), inclusion of numbers and/or special characters (1 to 10 each), and by word separator characters and letter case. Words are drawn randomly from either a pre-generated [word list](http://www.mieliestronk.com/corncob_lowercase.txt) or from a word list created by scraping an online collection of commonly-used (English words)[http://www.paulnoll.com].
+A single page app to generate XKCD-style high entropy passwords. Passwords may be customized by number of words (1 to 10), inclusion of numbers and/or special characters (1 to 10 each), and by word separator characters and letter case. Words are drawn randomly from either a pre-generated [word list](http://www.mieliestronk.com/corncob_lowercase.txt) or from a word list created by scraping an online collection of commonly-used [English words](http://www.paulnoll.com).
 
 #### Outside Code
 
