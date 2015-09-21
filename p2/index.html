@@ -1,48 +1,161 @@
 <!DOCTYPE html>
 
-<html>
+<html id="html">
 
     <head>
-        
+   
         <!-- Meta-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-        <meta name="description" content="CSCI E-15">
+        <meta name="description" content="CSCI E-15 Project 2 - XKCD Password Generator">
         <meta name="author" content="Matthew Bullen">
-        
+      
         <!-- Title & Favicon-->
-        <title>CSCI E-15</title>
-        <link id="favicon" rel="shortcut icon" href="data:image/png;base64,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" type="image/png" />
+        <title>CSCI E-15 Project 2</title>
+        <link id="favicon" rel="shortcut icon" href="img/favicon.png" type="image/png">
         
         <!-- CSS-->
-        <style>
-        
-            #content {
-                width: 500px;
-                margin: 0px auto;
-            }
-
-            #message {
-                margin-top: 25%;
-                font-size: 50px;
-                font-family: monospace, sans-serif;
-                color: rgb(120, 120, 120);
-                text-align: center;
-            }
-            
-        </style>
-        
-    </head>
-
-    <body>
-
-        <div id="content">
-        
-            <div id="message">Under Construction</div>
-
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/site.css">
+      
+    </head> 
+   
+    <body id="body">
+    
+        <div id="row-top" class="row">
+            <div class="large-12 columns">
+                <h2 class="h2-title">XKCD Password Generator</h2>
+            </div>
         </div>
-    
+        
+        <div id="row-bottom" class="row">
+        
+            <div id="left" class="large-4 columns">
+            
+                <div id="password-options-title">Password Options</div>
+                
+                <h5 id="number-words-title">How many words?</h5>
+                <div id="range-slider-words" class="range-slider" data-slider data-options="initial: 4; start: 1; end: 10; step: 1;">
+                    <span id="range-button-words" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                    <span class="range-slider-active-segment"> </span>
+                    <input id="quantity-words" name="quantity-words" type="hidden">
+                </div>
+                
+                <h5 id="customize-title">Customize the words?</h5>
+                
+                <div class="checkbox-row">
+                    <div class="checkbox-label">Include numbers</div>
+                    <input id="include-numbers" class="checkbox-box" type="checkbox" name="include-numbers" value="false">
+                </div>
+                
+                <div id="range-slider-numbers" class="range-slider disabled" data-slider data-options="initial: 1; start: 1; end: 10; step: 1;">
+                    <span id="range-button-numbers" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                    <span class="range-slider-active-segment"> </span>
+                    <input id="quantity-numbers" name="quantity-numbers" type="hidden">
+                </div>
+                
+                <div class="checkbox-row">
+                    <div class="checkbox-label">Include special characters</div>
+                    <input id="include-special" class="checkbox-box" type="checkbox" name="include-special" value="false">
+                </div>
+                
+                <div id="range-slider-special" class="range-slider disabled" data-slider data-options="initial: 1; start: 1; end: 10; step: 1;">
+                    <span id="range-button-special" class="range-slider-handle xkcd-color" role="slider" tabindex="0"> </span>
+                    <span class="range-slider-active-segment"> </span>
+                    <input id="quantity-special" name="quantity-special" type="hidden">
+                </div>
+                
+                <h5 id="spacers-title">Word spacing?</h5>
+                
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">Use hyphens</div>
+                    <input id="include-hyphens" class="checkbox-box checkbox-box-spacers" type="checkbox" name="include-hyphens" value="true" checked>
+                </div>
+                
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">Use underscores</div>
+                    <input id="include-underscores" class="checkbox-box checkbox-box-spacers" type="checkbox" name="include-underscores" value="false">
+                </div>
+                
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">Use blank spaces</div>
+                    <input id="include-spaces" class="checkbox-box checkbox-box-spacers" type="checkbox" name="include-spaces" value="false">
+                </div>
+                
+                <h5 id="case-title">Word case?</h5>
+                
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">All lowercase</div>
+                    <input id="include-lowercase" class="checkbox-box checkbox-box-case" type="checkbox" name="include-lowercase" value="true" checked>
+                </div>
+                
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">All uppercase</div>
+                    <input id="include-uppercase" class="checkbox-box checkbox-box-case" type="checkbox" name="include-uppercase" value="false">
+                </div>
+
+                <div class="checkbox-row-grouped">
+                    <div class="checkbox-label">First letter capitalized</div>
+                    <input id="include-capitalized" class="checkbox-box checkbox-box-case" type="checkbox" name="include-capitalized" value="false">
+                </div>
+                
+            </div>
+            
+            <div id="right" class="large-8 columns">
+
+                <button id="generate-button" class="button xkcd-color">Get a new password!</button>
+                
+                <ul class="accordion" data-accordion role="tablist">
+                    <li class="accordion-navigation accordion-navigation-first">
+                        <a id="panel1d-heading" class="accordion-href xkcd-color" href="#panel1d" role="tab" aria-controls="panel1d">What's XKCD and what's an XKCD password?</a>
+                        <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading">
+                            <p class="discussion">
+                                XKCD is a web comic covering math, science and computer programming topics, known for its witty and dry sense of humor. A popular post there discussed a type of user-friendly high-entropy password, meaning a password designed to be easy for humans to remember, but hard for computers to crack.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a id="panel2d-heading" class="accordion-href xkcd-color" href="#panel2d"  role="tab" aria-controls="panel2d">How do I make one?</a>
+                        <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
+                            <p class="discussion">Pick any combination of settings in the menu to the left, then click "Get a new password!" directly above. Your new password will be displayed in a pop-up message.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-navigation">
+                        <a id="panel3d-heading" class="accordion-href xkcd-color" href="#panel3d" role="tab" aria-controls="panel3d">How do I read the original XKCD post?</a>
+                        <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
+                            <div class="image-wrapper overlay-fade-in-new-background">
+                                <img id="pic" src="img/comic.png" title="The original XKCD comic strip!" />
+                                <div class="image-overlay-content">
+                                    <div class="discussion">To read the original post and other XKCD posts, use this link:</div>
+                                    <div class="xkcd-center">
+                                        <a id="xkcd-button" class="xkcd-color" href="https://xkcd.com/936/" target="_blank" title="Read the original post on www.xkcd.com">xkcd.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            <div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <p id="modalLeadTop" class="lead"> </p>
+                <h3 id="modalMessage" class="password"> </h3>
+                <p id="modalLeadBottom" class="lead"> </p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+            
+        </div>
+        
+        <!-- JS-->
+        <script src="js/jquery.2.1.4.min.js"> </script>
+        <script src="js/foundation.min.js"> </script>
+        <script src="js/foundation.accordion.js"> </script>
+        <script src="js/foundation.reveal.js"> </script>
+        <script src="js/site.js"> </script>
+        
     </body>
-    
+   
 </html>
