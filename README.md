@@ -1,8 +1,15 @@
-## CSCI E-15 Dynamic Web Applications Portfolio
+## CSCI E-15 Project 1
 
-In progress - a portfolio for the Fall 2015 Dynamic Web Applications class. Right now, I've completed the first and second projects. The remaining two links lead to placeholder pages, and will be updated as I finish each of them.
+#### Live URL
 
-##### View P1: http://p1.matthewbullen.me
-##### View P2: http://p2.matthewbullen.me
-##### View P3: http://p3.matthewbullen.me
-##### View P4: http://p4.matthewbullen.me
+http://p1.matthewbullen.me
+
+#### Description
+
+An introductory page and the top page of the portfolio of class projects.
+
+#### Outside Code
+
+* Zurb Foundation 5: http://foundation.zurb.com/
+* jQuery 2.1.4: https://jquery.com/download/
+* Museo and Sina fonts: http://www.fontspring.com/

@@ -13,11 +13,11 @@ $(document).ready(function() {
 function setProjectLinks() {
     var links = [
         "http://p2.matthewbullen.me/",
-        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p2",
+        "https://github.com/mattbullen/harvard-cscie15-p2",
         "http://p3.matthewbullen.me/",
-        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p3",
+        "https://github.com/mattbullen/harvard-cscie15-p3",
         "http://p4.matthewbullen.me/",
-        "https://github.com/mattbullen/harvard-cscie15-portfolio/tree/master/p4",
+        "https://github.com/mattbullen/harvard-cscie15-p4",
     ];
     var i, button;
     for (i = 0; i < 6; i++) {
